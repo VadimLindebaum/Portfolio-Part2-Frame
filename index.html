@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My works</title>
+</head>
+<body id="home">
+    <header class="menu">
+        <button class="hamburger" type="button" aria-label="Menu"
+                aria-expanded="false" aria-controls="menu-panel">
+            <span class="line" aria-hidden="true"></span>
+            <span class="line" aria-hidden="true"></span>
+            <span class="line" aria-hidden="true"></span>
+        </button>
+
+        <nav class="menu-panel" id="menu-panel" aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#works">My works</a></li>
+                <li><a href="#">My clients</a></li>
+                <li><a href="#">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="my-works" id="works">
+        <h1>My works</h1>
+        <div class="frame">
+            <button class="frame-next" type="button" aria-label="Next image">
+                <img id="frame" src="images/1.webp" alt="Computer setup with pink lighting">
+                <span>Next image →</span>
+            </button>
+            <p class="frame-status" role="status" aria-atomic="true">
+                <span class="frame-count">1 / 6</span><span class="visually-hidden">. Computer setup with pink lighting.</span>
+            </p>
+        </div>
+        <div class="works-gallery"></div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
